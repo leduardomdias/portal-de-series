@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        font-family: "Poppins";
+      }
+
+      #fonte {
+        font-family: "Bebas Neue";
+      }
+
+      .custom-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+      }
+
+      .navbar-toggler {
+        border-color: white;
+      }
+
+      .favorite-btn {
+        background-color: #dc3545;
+        border: none;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+
+      .favorite-btn:hover {
+        background-color: #b02a37;
+      }
+
+      .card-img-top {
+        object-fit: cover;
+        height: 250px;
+      }
+
+      .season-card {
+        background-color: #111;
+        color: white;
+        border: 2px solid #dc3545;
+      }
+    </style>
+    <title>Informações do Filme</title>
+  </head>
+  <body class="bg-black">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="1index.html" id="fonte">
+          <h1
+            class="fw-bold border border-danger border-2 py-2 px-3 bg-black text-danger"
+          >
+            METFLIX.
+          </h1>
+        </a>
+        <button
+          class="navbar-toggler border border-dark border-2"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon custom-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="2explorer.html"
+                ><h2 class="text-white px-3" id="fonte">Explorer</h2></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container my-4" id="fonte">
+      <section>
+        <h2 class="text-danger">Informações Gerais</h2>
+        <div class="row">
+          <div class="col-lg-4">
+            <img
+              src="https://via.placeholder.com/500x281.png?text=Imagem-do-Filme"
+              class="img-fluid py-3"
+              alt="Poster do filme"
+            />
+          </div>
+          <div class="col-lg-8">
+            <h3 class="text-white">Título do Filme</h3>
+            <p class="text-white">
+              Este filme narra a história de personagens que enfrentam desafios
+              únicos enquanto lutam por seus objetivos. Uma jornada que explora
+              emoções profundas e momentos marcantes.
+            </p>
+            <ul class="list-unstyled text-white">
+              <li><strong>Gênero:</strong> Ação, Aventura</li>
+              <li><strong>Duração:</strong> 120 minutos</li>
+              <li><strong>Plataforma de Exibição:</strong> Amazon Prime</li>
+              <li><strong>Ano de Lançamento:</strong> 2022</li>
+              <li><strong>Status:</strong> Lançado</li>
+            </ul>
+            <button class="favorite-btn">Adicionar aos Favoritos</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-5">
+        <h2 class="text-danger">Elenco</h2>
+        <div class="row">
+          <div class="col-lg-2 col-md-3 col-sm-4 text-center">
+            <img
+              src="https://via.placeholder.com/400x400.png?text=Imagem-Elenco"
+              class="img-fluid rounded-circle mb-2"
+              alt="Ator 1"
+            />
+            <h6 class="text-white">Ator 1</h6>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 text-center">
+            <img
+              src="https://via.placeholder.com/400x400.png?text=Imagem-Elenco"
+              class="img-fluid rounded-circle mb-2"
+              alt="Ator 2"
+            />
+            <h6 class="text-white">Ator 2</h6>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 text-center">
+            <img
+              src="https://via.placeholder.com/400x400.png?text=Imagem-Elenco"
+              class="img-fluid rounded-circle mb-2"
+              alt="Ator 3"
+            />
+            <h6 class="text-white">Ator 3</h6>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 text-center">
+            <img
+              src="https://via.placeholder.com/400x400.png?text=Imagem-Elenco"
+              class="img-fluid rounded-circle mb-2"
+              alt="Ator 4"
+            />
+            <h6 class="text-white">Ator 4</h6>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 text-center">
+            <img
+              src="https://via.placeholder.com/400x400.png?text=Imagem-Elenco"
+              class="img-fluid rounded-circle mb-2"
+              alt="Ator 5"
+            />
+            <h6 class="text-white">Ator 5</h6>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-5">
+        <h2 class="text-danger">Temporadas e Episódios</h2>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="season-card p-3">
+              <h4 class="text-danger">Sequência 1</h4>
+              <p><strong>Detalhes:</strong> Detalhes do filme 1.</p>
+              <p><strong>Status:</strong> Completo</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="season-card p-3">
+              <h4 class="text-danger">Sequência 2</h4>
+              <p><strong>Detalhes:</strong> Detalhes do filme 2.</p>
+              <p><strong>Status:</strong> Completo</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="season-card p-3">
+              <h4 class="text-danger">Sequência 3</h4>
+              <p><strong>Detalhes:</strong> Detalhes do filme 3.</p>
+              <p><strong>Status:</strong> Em Produção</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-black text-lg-start w-100 mt-5">
+      <div class="container">
+        <div class="row text-center text-white py-4">
+          <div class="col-md-4">
+            <h5 class="mb-3" id="fonte">Sobre nós</h5>
+            <p>
+              METFLIX é uma plataforma fictícia para amantes de séries e filmes
+              clássicos e novos sucessos.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5 class="mb-3" id="fonte">Links Úteis</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Política de Privacidade</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Termos de Serviço</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Ajuda</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5 class="mb-3" id="fonte">Redes Sociais</h5>
+            <a href="https://www.facebook.com" class="mx-2 text-secondary"
+              ><i class="bi bi-facebook" style="font-size: 2rem"></i
+            ></a>
+            <a href="https://web.telegram.org" class="mx-2 text-secondary"
+              ><i class="bi bi-telegram" style="font-size: 2rem"></i
+            ></a>
+            <a href="https://www.instagram.com" class="mx-2 text-secondary"
+              ><i class="bi bi-instagram" style="font-size: 2rem"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center p-3 text-white fs-4" id="fonte">
+        © 2024 Luís - All Rights Reserved
+      </div>
+    </footer>
+  </body>
+</html>

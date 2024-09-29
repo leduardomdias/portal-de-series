@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        font-family: "Poppins";
+      }
+
+      #fonte {
+        font-family: "Bebas Neue";
+      }
+
+      .custom-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+      }
+
+      .navbar-toggler {
+        border-color: white;
+      }
+
+      .rating {
+        color: red;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+    </style>
+    <title>Pesquisa de Séries e Filmes</title>
+  </head>
+  <body class="bg-black">
+    <nav class="navbar navbar-expand-lg navbar-light bg-black">
+      <div class="container-fluid mx-3">
+        <a class="navbar-brand" href="1index.html" id="fonte">
+          <h1
+            class="fw-bold border border-danger border-2 py-2 px-3 bg-black text-danger"
+          >
+            METFLIX.
+          </h1>
+        </a>
+        <form class="d-flex" role="search" id="searchForm">
+          <input
+            class="form-control me-2"
+            type="search"
+            id="searchInput"
+            placeholder="Pesquisar"
+            aria-label="Search"
+          />
+          <button
+            class="btn btn-outline-danger text-danger bg-black"
+            type="submit"
+          >
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+
+    <main class="container my-4" id="fonte">
+      <h2 class="text-danger">Pesquisa de Séries e Filmes</h2>
+      <div class="mb-4">
+        <h5 class="text-danger">Filtros:</h5>
+        <div class="row">
+          <div class="col-md-4">
+            <select id="genreFilter" class="form-select">
+              <option value="">Selecionar Gênero</option>
+              <option value="28">Ação</option>
+              <option value="35">Comédia</option>
+              <option value="18">Drama</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <select id="ratingFilter" class="form-select">
+              <option value="">Selecionar Nota</option>
+              <option value="7">Acima de 7</option>
+              <option value="8">Acima de 8</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <select id="yearFilter" class="form-select">
+              <option value="">Selecionar Ano</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="text-danger">Séries Populares</h2>
+      <div class="d-flex flex-wrap pt-5 px-4" id="fonte">
+        <div class="row g-3">
+          <div class="col-lg-3">
+            <div class="card border-danger border-2" style="width: 100%">
+              <img
+                src="https://media.guiame.com.br/archives/2018/10/04/278447589-cronicas-de-narnia.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body bg-black">
+                <a href="3serie.html" class="text-decoration-none">
+                  <h5 class="card-title text-danger fw-bold fs-3">Series 1</h5>
+                </a>
+                <h5 class="card-title text-white">Description</h5>
+                <p class="card-text text-white">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <p class="rating">Nota: 8.7</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="card border-danger border-2" style="width: 100%">
+              <img
+                src="https://www.diariodepernambuco.com.br/static/app/noticia_127983242361/2018/07/24/758213/20180724140400582589i.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body bg-black">
+                <a href="3serie.html" class="text-decoration-none">
+                  <h5 class="card-title text-danger fw-bold fs-3">Series 2</h5>
+                </a>
+                <h5 class="card-title text-white">Description</h5>
+                <p class="card-text text-white">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <p class="rating">Nota: 7.5</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="card border-danger border-2" style="width: 100%">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnR7Fb5ZqREdPHLEtDtoFR7Qt8Mh2ubJ16Kw&s"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body bg-black">
+                <a href="3serie.html" class="text-decoration-none">
+                  <h5 class="card-title text-danger fw-bold fs-3">Series 3</h5>
+                </a>
+                <h5 class="card-title text-white">Description</h5>
+                <p class="card-text text-white">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <p class="rating">Nota: 8.2</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="card border-danger border-2" style="width: 100%">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZdyUlH4ojGwV9koiy2EG7covBCmQwSYiESA&s"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body bg-black">
+                <a href="3serie.html" class="text-decoration-none">
+                  <h5 class="card-title text-danger fw-bold fs-3">Series 4</h5>
+                </a>
+                <h5 class="card-title text-white">Description</h5>
+                <p class="card-text text-white">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <p class="rating">Nota: 7.9</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="text-danger mt-5">Filmes Populares</h2>
+      <div class="d-flex flex-wrap pt-5 px-4" id="fonte">
+        <div class="row g-3">
+          <div class="col-lg-3">
+            <div class="card border-danger border-2" style="width: 100%">
+              <img
+                src="https://cinema10.com.br/upload/filmes/filmes_15951_gchris-pine-the-contractor-01-700x400-1-700x400.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body bg-black">
+                <a href="4filme.html" class="text-decoration-none">
+                  <h5 class="card-title text-danger fw-bold fs-3">Movie 1</h5>
+                </a>
+                <h5 class="card-title text-white">Description</h5>
+                <p class="card-text text-white">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <p class="rating">Nota: 6.5</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="card border-danger border-2" style="width: 100%">
+              <img
+                src="https://universoretro.com.br/wp-content/uploads/2021/01/cruella-emma-stone.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body bg-black">
+                <a href="4filme.html" class="text-decoration-none">
+                  <h5 class="card-title text-danger fw-bold fs-3">Movie 2</h5>
+                </a>
+                <h5 class="card-title text-white">Description</h5>
+                <p class="card-text text-white">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <p class="rating">Nota: 8.3</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="card border-danger border-2" style="width: 100%">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQedAFJ0lgx8zcJPDRfxLpXZ2X6KGEwXUq-4g&s"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body bg-black">
+                <a href="4filme.html" class="text-decoration-none">
+                  <h5 class="card-title text-danger fw-bold fs-3">Movie 3</h5>
+                </a>
+                <h5 class="card-title text-white">Description</h5>
+                <p class="card-text text-white">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <p class="rating">Nota: 7.8</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="card border-danger border-2" style="width: 100%">
+              <img
+                src="https://i0.wp.com/www.cinemadebuteco.com.br/wp-content/uploads/2013/10/jean-claude-van-damme-cascavel.jpg?resize=700%2C400&ssl=1"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body bg-black">
+                <a href="4filme.html" class="text-decoration-none">
+                  <h5 class="card-title text-danger fw-bold fs-3">Movie 4</h5>
+                </a>
+                <h5 class="card-title text-white">Description</h5>
+                <p class="card-text text-white">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <p class="rating">Nota: 6.9</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-black text-lg-start w-100 mt-5">
+      <div class="container">
+        <div class="row text-center text-white py-4">
+          <div class="col-md-4">
+            <h5 class="mb-3" id="fonte">Sobre nós</h5>
+            <p>
+              METFLIX é uma plataforma fictícia para amantes de séries e filmes
+              clássicos e novos sucessos.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5 class="mb-3" id="fonte">Links Úteis</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Política de Privacidade</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Termos de Serviço</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Ajuda</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5 class="mb-3" id="fonte">Redes Sociais</h5>
+            <a href="https://www.facebook.com" class="mx-2 text-secondary"
+              ><i class="bi bi-facebook" style="font-size: 2rem"></i
+            ></a>
+            <a href="https://web.telegram.org" class="mx-2 text-secondary"
+              ><i class="bi bi-telegram" style="font-size: 2rem"></i
+            ></a>
+            <a href="https://www.instagram.com" class="mx-2 text-secondary"
+              ><i class="bi bi-instagram" style="font-size: 2rem"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center p-3 text-white fs-4" id="fonte">
+        © 2024 Luís - All Rights Reserved
+      </div>
+    </footer>
+  </body>
+</html>
